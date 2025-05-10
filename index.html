@@ -6,8 +6,39 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>MY FIRST WORK</h1>
-    <input type="text" id="input" placeholder="Enter text here">
-    <button id="submit">Submit</button>
+    
+   <div style="border:1px solid black; width: 300px; height: 300px;">
+        <h1>MY FIRST WORK</h1>
+        <input type="text" id="myInput" placeholder="Enter text here">
+        <button id="submit" onclick="getInputValue()">Submit</button>
+        <div id="result"></div>
+
+   </div>
+
+
+    <div style="border:1px solid black; width: 300px; height: 300px;">
+        <h1>MY Second Work</h1>
+        <input type="text" id="myInputNumberOne" placeholder="Enter Number 1 here">
+        <input type="text" id="myInputNumberTwo" placeholder="Enter Number 2 here">
+        <button id="submit" onclick="SumFunction()">Submit</button>
+        <div id="result"></div>
+
+   </div>
+
+
+<script>
+    function getInputValue() {
+ 
+        // const input = document.getElementById("myInput").value;
+        // const resultDiv = document.getElementById("result");
+        // resultDiv.innerHTML = input;
+
+        document.getElementById("result").innerHTML = document.getElementById("myInput").value
+
+
+    
+}
+
+</script>
 </body>
 </html>
